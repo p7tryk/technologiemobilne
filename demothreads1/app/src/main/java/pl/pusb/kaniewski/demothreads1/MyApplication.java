@@ -1,6 +1,7 @@
 package pl.pusb.kaniewski.demothreads1;
 
 import android.app.Application;
+import android.os.StrictMode;
 
 import java.io.IOException;
 import java.util.concurrent.Executor;
@@ -21,5 +22,10 @@ public class MyApplication extends Application {
 
 
     ExecutorService executorService = Executors.newFixedThreadPool(2);
+    public static void enableStrictMode()
+    {
+        StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
 
+        StrictMode.setThreadPolicy(policy);
+    }
 }
