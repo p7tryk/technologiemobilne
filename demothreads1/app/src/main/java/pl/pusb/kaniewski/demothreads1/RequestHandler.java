@@ -1,5 +1,7 @@
 package pl.pusb.kaniewski.demothreads1;
 
+import android.util.Log;
+
 import org.json.JSONObject;
 
 import java.io.BufferedReader;
@@ -19,9 +21,10 @@ public class RequestHandler {
     public static String sendGet(String url) throws IOException {
         URL obj = new URL(url);
         HttpURLConnection con = (HttpURLConnection) obj.openConnection();
+        Log.d("http","connection opened");
         con.setRequestMethod("GET");
         int responseCode = con.getResponseCode();
-        System.out.println("Response Code :: " + responseCode);
+        Log.d("http","Response Code :: " + responseCode);
         if (responseCode == HttpURLConnection.HTTP_OK) { // connection ok
             BufferedReader in = new BufferedReader(new InputStreamReader( con.getInputStream()));
             String inputLine;
@@ -33,7 +36,7 @@ public class RequestHandler {
             in.close();
             return response.toString();
         } else {
-            return "";
+            return "nothing";
         }
     }
 }
