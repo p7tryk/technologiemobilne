@@ -9,7 +9,7 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
 public class MyApplication extends Application {
-    public static String exampleURL = "http://archfail.lan/android.php";
+    public static String exampleURL = "http://archfail.lan/android.php?platform=android";
     public static String response;
 
     /*static {
@@ -20,12 +20,13 @@ public class MyApplication extends Application {
         }
     }*/
 
+    public static ExecutorService executorService = Executors.newFixedThreadPool(4);
 
-    ExecutorService executorService = Executors.newFixedThreadPool(2);
     public static void enableStrictMode()
     {
         StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
 
         StrictMode.setThreadPolicy(policy);
     }
+
 }

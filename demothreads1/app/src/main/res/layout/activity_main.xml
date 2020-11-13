@@ -26,6 +26,18 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="?attr/colorPrimary" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="test" />
+
+        <Button
+            android:id="@+id/buttonrefresh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="refresh" />
     </com.google.android.material.appbar.AppBarLayout>
 
     <androidx.viewpager.widget.ViewPager

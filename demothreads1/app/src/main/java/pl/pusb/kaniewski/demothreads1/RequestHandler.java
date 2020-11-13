@@ -14,10 +14,39 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 import java.net.URLEncoder;
 import java.util.Iterator;
+import java.util.concurrent.Executor;
 
 import javax.net.ssl.HttpsURLConnection;
 
 public class RequestHandler {
+
+
+    private final Executor executor;
+    //public final RequestCallback callback = new RequestCallback();
+
+    public RequestHandler(Executor executor) {
+        this.executor = executor;
+    }
+    interface RequestCallback
+    {
+        void onComplete();
+    }
+
+    public void asyncGet()
+    {
+        executor.execute(new Runnable() {
+            @Override
+            public void run() {
+                Log.d("runnable","runnable");
+                try {
+                    MyApplication.response=sendGet(MyApplication.exampleURL);
+                    //callback.onComplete();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        });
+    }
     public static String sendGet(String url) throws IOException {
         URL obj = new URL(url);
         HttpURLConnection con = (HttpURLConnection) obj.openConnection();
