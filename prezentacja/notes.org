@@ -1,0 +1,4 @@
+* haki uzyte
++ skopiowane get request
++ wylaczenie "network on main thread" exeception
++ dodanie internet do permission

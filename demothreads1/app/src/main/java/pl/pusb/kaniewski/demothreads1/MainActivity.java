@@ -9,14 +9,12 @@ import com.google.android.material.tabs.TabLayout;
 import androidx.viewpager.widget.ViewPager;
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.view.Menu;
-import android.view.MenuItem;
+
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
 import java.io.IOException;
-import java.util.concurrent.Executor;
 
 import pl.pusb.kaniewski.demothreads1.ui.main.SectionsPagerAdapter;
 
