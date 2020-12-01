@@ -31,7 +31,9 @@ build/
 .navigation
 captures/
 output.json 
-    
+
+raw/
+
 #NDK
 obj/
 .externalNativeBuild
