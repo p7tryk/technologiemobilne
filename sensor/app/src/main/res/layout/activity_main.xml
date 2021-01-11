@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ap="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="30dp"
+        android:text="TYPE_ACCELEROMETER" />
+
+    <TextView
+        android:id="@+id/accX"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="50dp"
+        android:layout_toEndOf="@+id/textView5"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/accY"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="50dp"
+        android:layout_toEndOf="@+id/accX"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/accZ"
+        android:layout_width="91dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="50dp"
+        android:layout_toEndOf="@+id/accY"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/textView5"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="30dp"
+        android:text="TYPE_GYROSCOPE" />
+
+    <TextView
+        android:id="@+id/gyroX"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView5"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="50dp"
+        android:layout_toEndOf="@+id/textView10"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/gyroY"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView5"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="50dp"
+        android:layout_toEndOf="@+id/gyroX"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/gyroZ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView5"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="50dp"
+        android:layout_toEndOf="@+id/gyroY"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/textView10"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="30dp"
+        android:text="TYPE_MAGNETIC_FIELD" />
+
+    <TextView
+        android:id="@+id/magX"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView10"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="50dp"
+        android:layout_toEndOf="@+id/textView"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/magY"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView10"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="50dp"
+        android:layout_toEndOf="@+id/magX"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/magZ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView10"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="50dp"
+        android:layout_toEndOf="@+id/magY"
+        android:text="TextView" />
+
+    <com.jjoe64.graphview.GraphView
+        android:id="@+id/graph"
+        android:layout_width="match_parent"
+        android:layout_height="464dp"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="3dp" />
+
+    <!--    <com.androidplot.xy.XYPlot-->
+<!--        android:id="@+id/plot"-->
+<!--        style="@style/APDefacto.Dark"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:layout_alignParentStart="true"-->
+<!--        android:layout_alignParentTop="true"-->
+<!--        android:layout_marginStart="-16dp"-->
+<!--        android:layout_marginTop="-2dp"-->
+<!--        ap:domainTitle="domain"-->
+<!--        ap:lineLabelRotationBottom="-45"-->
+<!--        ap:lineLabels="left|bottom"-->
+<!--        ap:rangeTitle="range"-->
+<!--        ap:title="A Simple XY Plot" />-->
+
+</RelativeLayout>
