@@ -21,7 +21,7 @@ public class DisplayMessageActivity extends AppCompatActivity
 	private static final String PLAYBACK_TIME = "play_time";
 	private int mCurrentPosition = 0;
 
-	private static final String VIDEO_SAMPLE = "league";
+	private static final String VIDEO_SAMPLE = "warthunder";
 	private VideoView mVideoView;
 
 	@Override
